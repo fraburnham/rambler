@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/elwinar/rambler/driver"
+	"github.com/custompro98/rambler/driver"
 	"github.com/google/go-cmp/cmp"
 )
 

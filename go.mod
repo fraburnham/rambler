@@ -1,4 +1,4 @@
-module github.com/elwinar/rambler
+module github.com/custompro98/rambler
 
 go 1.12
 

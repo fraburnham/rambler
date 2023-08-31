@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/elwinar/rambler/log"
+	"github.com/custompro98/rambler/log"
 )
 
 func TestReverse(t *testing.T) {
