@@ -22,3 +22,7 @@ release: ## Build the release files
 .PHONY: test
 test: ## Test the project
 	go test ./...
+
+.PHONY: push
+push: ## Push image to docker
+	docker buildx build --push --platform linux/arm64,linux/amd64 -t custompro98/rambler:$(version) -t custompro98/rambler:latest .
