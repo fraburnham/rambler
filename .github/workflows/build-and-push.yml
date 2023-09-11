@@ -21,7 +21,6 @@ jobs:
           # generate Docker tags based on the following events/attributes
           tags: |
             type=semver,pattern={{major}}.{{minor}}.{{patch}}
-            type=sha
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
@@ -35,7 +34,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: |
-            custompro98/rambler:latest
-            ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}
           platforms: linux/amd64,linux/arm64
